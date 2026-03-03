@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alfiansyah Web Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: rgba(15,23,42,0.9);
+    padding: 15px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+header h1 {
+    color: #38bdf8;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+section {
+    padding: 100px 10%;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #cbd5e1;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+.btn {
+    background: #38bdf8;
+    color: black;
+    padding: 14px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.services {
+    background: #1e293b;
+    text-align: center;
+}
+
+.grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #0f172a;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.portfolio img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.testimoni {
+    background: #1e293b;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #020617;
+}
+
+@media(max-width:768px){
+    .hero h2 {
+        font-size: 32px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>AlfiansyahDev</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h2>Saya Bantu Bisnis Anda Tampil Profesional di Internet</h2>
+    <p>Website cepat, modern, dan mobile-friendly untuk UMKM & bisnis lokal.</p>
+    <a href="https://wa.me/6283833606878" class="btn">Konsultasi Gratis</a>
+</section>
+
+<section class="services" id="layanan">
+    <h2>Layanan</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Landing Page</h3>
+            <p>Website 1 halaman untuk promosi produk/jasa.</p>
+            <p><strong>Mulai 700rb</strong></p>
+        </div>
+        <div class="card">
+            <h3>Company Profile</h3>
+            <p>Website profesional untuk bisnis Anda.</p>
+            <p><strong>Mulai 1,5jt</strong></p>
+        </div>
+        <div class="card">
+            <h3>Custom Website</h3>
+            <p>Dashboard, login, booking system, dll.</p>
+            <p><strong>Mulai 3jt</strong></p>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="grid portfolio">
+        <div class="card">
+            <img src="https://via.placeholder.com/400x250" alt="">
+            <p>Website Barbershop</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/400x250" alt="">
+            <p>Website Coffee Shop</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/400x250" alt="">
+            <p>Website Jasa Servis</p>
+        </div>
+    </div>
+</section>
+
+<section class="testimoni">
+    <h2>Testimoni</h2>
+    <div class="grid">
+        <div class="card">
+            <p>"Website saya jadi lebih dipercaya pelanggan!"</p>
+            <strong>- Owner Barbershop</strong>
+        </div>
+        <div class="card">
+            <p>"Penjualan meningkat setelah punya website."</p>
+            <strong>- Owner Coffee Shop</strong>
+        </div>
+    </div>
+</section>
+
+<section id="kontak">
+    <h2>Siap Naik Level?</h2>
+    <p>Hubungi saya sekarang dan dapatkan konsultasi GRATIS.</p>
+    <br>
+    <a href="https://wa.me/6283833606878" class="btn">Chat WhatsApp</a>
+</section>
+
+<footer>
+    © 2026 Alfiansyah Web Developer | All Rights Reserved
+</footer>
+
+</body>
+</html>
